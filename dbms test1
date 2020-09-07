@@ -1,0 +1,29 @@
+create table student(usn integer primary key, name varchar(20),phonenumber integer,branch varchar(20));
+
+insert into student 
+
+values( 11,'shraddha',9741,'CS');
+
+insert into student 
+
+values( 12,'yashwitha',1234,'IS');
+
+insert into student values(13,'tejasvi',4567,'EC');
+
+insert into student values(14,'shrinidhi',3678,'CS');
+
+insert into student values(15,'rachana',6543,'ME');
+
+select * from student;
+
+usn	name	phonenumber	branch
+
+11	shraddha	9741	CS
+
+12	yashwitha	1234	IS
+
+13	tejasvi	4567	EC
+
+14	shrinidhi	3678	CS
+
+15	rachana	6543  ME
