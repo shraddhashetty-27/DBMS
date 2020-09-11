@@ -1,0 +1,27 @@
+**Schema (MySQL v5.7)**
+
+    create table BOOK(Book_id integer primary key,Title varchar(20),Publisher_Name varchar(20),Pub_Year integer);
+    insert into BOOK values(10,'DBMS','AAA',2001);
+    insert into BOOK values(11,'ADP','BBB',2002);
+    insert into BOOK values(12,'ATC','CCC',2003);
+    insert into BOOK values(13,'ME','DDD',2004);
+    insert into BOOK values(14,'CNS','EEE',2005);
+    create table BOOK_COPIES(Book_id integer,Branch_id integer,No_of_Copies integer,primary key(Book_id,Branch_id));
+
+---
+
+**Query #1**
+
+    select * from BOOK;
+
+| Book_id | Title | Publisher_Name | Pub_Year |
+| ------- | ----- | -------------- | -------- |
+| 10      | DBMS  | AAA            | 2001     |
+| 11      | ADP   | BBB            | 2002     |
+| 12      | ATC   | CCC            | 2003     |
+| 13      | ME    | DDD            | 2004     |
+| 14      | CNS   | EEE            | 2005     |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/7i7MegfERaF8p6cK1h5j2q/2)
