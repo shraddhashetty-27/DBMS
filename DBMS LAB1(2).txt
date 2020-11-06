@@ -124,4 +124,43 @@ There are no results to be displayed.
 
 ---
 
+**Query #8**
+
+    create view v1 as select Book_id ,sum(No_of_Copies) from BOOK_COPIES group by Book_id;
+
+There are no results to be displayed.
+
+---
+**Query #9**
+
+    select * from v1;
+
+| Book_id | sum(No_of_Copies) |
+| ------- | ----------------- |
+| 10      | 25                |
+| 20      | 15                |
+| 30      | 30                |
+| 40      | 7                 |
+
+---
+**Query #10**
+
+    create view v2 as select BOOK_COPIES.Book_id,title,sum(No_of_Copies) from BOOK,BOOK_COPIES where BOOK.Book_id=BOOK_COPIES.Book_id group by BOOK.Book_id,title;
+
+There are no results to be displayed.
+
+---
+**Query #11**
+
+    select * from v2;
+
+| Book_id | title | sum(No_of_Copies) |
+| ------- | ----- | ----------------- |
+| 10      | DBMS  | 25                |
+| 20      | SE    | 15                |
+| 30      | FLAT  | 30                |
+| 40      | BDA   | 7                 |
+
+---
+
 [View on DB Fiddle](https://www.db-fiddle.com/)
