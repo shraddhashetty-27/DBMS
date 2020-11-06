@@ -123,7 +123,6 @@ There are no results to be displayed.
 | 50      | 500       | 205     | 2017-09-01 | 2020-09-10 |
 
 ---
-
 **Query #8**
 
     create view v1 as select Book_id ,sum(No_of_Copies) from BOOK_COPIES group by Book_id;
@@ -145,7 +144,7 @@ There are no results to be displayed.
 ---
 **Query #10**
 
-    create view v2 as select BOOK_COPIES.Book_id,title,sum(No_of_Copies) from BOOK,BOOK_COPIES where BOOK.Book_id=BOOK_COPIES.Book_id group by BOOK.Book_id,title;
+    create view v2 as select BOOK.Book_id,title,sum(No_of_Copies) from BOOK,BOOK_COPIES where BOOK.Book_id=BOOK_COPIES.Book_id group by BOOK.Book_id,title;
 
 There are no results to be displayed.
 
@@ -163,4 +162,4 @@ There are no results to be displayed.
 
 ---
 
-[View on DB Fiddle](https://www.db-fiddle.com/)
+[View on DB Fiddle](https://www.db-fiddle.com/f/pgmtz7A3X4ZBuTgwTVr6VX/0)
