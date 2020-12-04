@@ -2,7 +2,7 @@
 
     create table SALESMAN(Salesman_id integer primary key,Name varchar(10),City varchar(10),Commission integer);
     create table CUSTOMER(Customer_id integer primary key,Cust_Name varchar(10),City varchar(10),Grade integer,Salesman_id integer,foreign key(Salesman_id) references SALESMAN(Salesman_id) on delete cascade);
-    create table ORDERS(Ord_No integer primary key,Purchace_Amt integer,Ord_Date date,Customer_id integer,Salesman_id integer,foreign key(Customer_id) references CUSTOMER(Customer_id)on delete cascade,foreign key(Salesman_id) references SALESMAN(Salesman_id)on delete cascade);
+    create table ORDERS(Ord_No integer primary key,Purchase_Amt integer,Ord_Date date,Customer_id integer,Salesman_id integer,foreign key(Customer_id) references CUSTOMER(Customer_id)on delete cascade,foreign key(Salesman_id) references SALESMAN(Salesman_id)on delete cascade);
     insert into SALESMAN values(10,'Akash','Mangalore',2);
     insert into SALESMAN values(20,'Ram','Bangalore',10);
     insert into SALESMAN values(30,'Raj','Mangalore',5);
