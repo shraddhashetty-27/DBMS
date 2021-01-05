@@ -49,7 +49,7 @@ There are no results to be displayed.
 
 | Grade | count(*) |
 | ----- | -------- |
-| 400   | 3        |
+| 400   | 2        |
 
 ---
 **Query #4**
@@ -58,7 +58,7 @@ There are no results to be displayed.
 
 | Grade | count(*) |
 | ----- | -------- |
-| 400   | 3        |
+| 400   | 2        |
 
 ---
 **Query #5**
